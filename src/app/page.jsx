@@ -1,10 +1,11 @@
 import Image from "next/image";
 
+import styles from './page.module.scss';
+
 export default function HomePage() {
   return (
-    <div>
+    <div className={styles.root}>
       main page
-
 
       <Image
         src="https://masterpiecer-images.s3.yandex.net/b2d91936767a11eeb11ee6d39d9a42a4:upscaled"

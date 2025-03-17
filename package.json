@@ -9,15 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "classnames": "^2.5.1",
+    "@tanstack/react-query": "5.66.0",
+    "@tanstack/react-query-devtools": "5.66.0",
+    "classnames": "2.5.1",
+    "motion": "12.5.0",
     "next": "15.1.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "sass": "^1.84.0"
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "sass": "1.84.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "eslint": "^9",
+    "@eslint/eslintrc": "3",
+    "eslint": "9",
     "eslint-config-next": "15.1.4"
   }
 }

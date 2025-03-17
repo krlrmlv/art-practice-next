@@ -1,13 +1,11 @@
-"use client";
-
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.scss";
 import Header from "@/components/Header";
 import YMetrica from "@/external/YMetrica";
 import { Suspense } from "react";
 import YMetrircaHit from "@/external/YMetrircaHit";
-import { usePathname, useSearchParams } from "next/navigation";
-import { AnimatePresence, motion } from "motion/react";
+// import { usePathname, useSearchParams } from "next/navigation";
+// import { AnimatePresence, motion } from "motion/react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,13 +23,13 @@ const geistMono = Geist_Mono({
 // };
 
 export default function RootLayout({ children }) {
-  const overlayVariants = {
-    visible: { opacity: 1 },
-    hidden: { opacity: 0 },
-  };
+  // const overlayVariants = {
+  //   visible: { opacity: 1 },
+  //   hidden: { opacity: 0 },
+  // };
 
-  const pathname = usePathname();
-  const params = useSearchParams();
+  // const pathname = usePathname();
+  // const params = useSearchParams();
 
   return (
     <html lang="ru">
@@ -42,17 +40,17 @@ export default function RootLayout({ children }) {
         <Header />
 
         <main>
-          <AnimatePresence>
+          {/* <AnimatePresence>
             <motion.div
               variants={overlayVariants}
               initial="hidden"
               animate="visible"
               exit="hidden"
               key={params || pathname}
-            >
-              {children}
-            </motion.div>
-          </AnimatePresence>
+            > */}
+          {children}
+          {/* </motion.div>
+          </AnimatePresence> */}
         </main>
         <footer>footer</footer>
         <Suspense fallback={<></>}>

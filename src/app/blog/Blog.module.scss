@@ -1,0 +1,14 @@
+.topSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  width: 50%;
+  container-name: topSection;
+  container-type: inline-size;
+}
+
+.bottomSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 8px;
+}

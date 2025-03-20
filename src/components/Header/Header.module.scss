@@ -1,0 +1,23 @@
+.root{
+  padding: 32px;
+}
+
+.root, .list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  gap: 32px;
+  list-style-type: none;
+}
+
+.logo{
+  width: auto;
+  height: 36px;
+}

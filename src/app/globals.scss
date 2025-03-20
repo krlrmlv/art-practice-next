@@ -1,3 +1,27 @@
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main{
+  padding: 32px;
+}
+
 img {
   object-fit: cover;
+}
+
+fieldset {
+  padding: 20px 30px 30px 30px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+fieldset legend {
+  padding: 0 20px;
+  color: red;
+  font-size: 32px;
 }

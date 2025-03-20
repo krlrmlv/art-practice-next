@@ -1,8 +1,8 @@
 export default function BlogLayout({ children }) {
-    return (
-        <div>
-            blog layout
-            {children}
-        </div>
-    );
+  return (
+    <fieldset>
+      <legend>Blog layout</legend>
+      {children}
+    </fieldset>
+  );
 }

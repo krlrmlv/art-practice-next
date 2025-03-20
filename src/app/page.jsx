@@ -4,7 +4,7 @@ import styles from './page.module.scss';
 
 export default function HomePage() {
   return (
-    <div className={styles.root}>
+    <div div className={styles.root}>
       main page
 
       <Image

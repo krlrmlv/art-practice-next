@@ -1,0 +1,21 @@
+.root{
+  min-width:  200px;
+
+  &.large{
+    min-width: 500px;
+    max-width: 50%;
+
+    @container topSection (width < 600px) {
+      min-width: initial;
+    }
+  }
+
+
+}
+
+.img{
+  width: 100%;
+}
+
+.title{}
+.description{}

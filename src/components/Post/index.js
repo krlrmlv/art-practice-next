@@ -1,5 +1,6 @@
 'use client'
 import { useParams } from 'next/navigation'
+import Card from '../Card';
 
 export default function Post() {
 
@@ -9,6 +10,7 @@ export default function Post() {
     return (
         <div>
             Post Component {post}
+            <Card large title={post} />
         </div>
     );
 }

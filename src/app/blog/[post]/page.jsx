@@ -1,4 +1,5 @@
 import Post from "@/components/Post";
+import { notFound } from "next/navigation";
 
 export const metadata = {
     title: "Post Page",
@@ -7,10 +8,11 @@ export const metadata = {
 
 export default function PostPage({ params }) {
     // return  new Error ('www');
+
+    if (!params) notFound()
     return (
         <div>
             Post {params?.post}
-
             <Post />
         </div>
     );

@@ -10,7 +10,7 @@ import YMetrircaHit from "@/external/YMetrircaHit";
 import { usePathname } from "next/navigation";
 import { AnimatePresence } from "motion/react";
 import Footer from "@/components/Footer";
-
+import { Analytics } from "@vercel/analytics/react"
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -53,6 +53,7 @@ export default function RootLayout({ children }) {
         <Suspense fallback={<></>}>
           <YMetrircaHit />
         </Suspense>
+        <Analytics />
       </body>
     </html>
   );

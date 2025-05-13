@@ -27,6 +27,14 @@ export default function Header() {
           <Link href={`/blog`}>Blog</Link>
         </li>
         <li>
+          <Link href={`/db`}>DB</Link>
+          <ul>
+            <li>
+              <Link href={`/db/blob`}>Blob</Link>
+            </li>
+          </ul>
+        </li>
+        <li>
           <Link href={`/404`}>404</Link>
         </li>
       </ul>

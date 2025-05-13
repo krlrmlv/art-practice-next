@@ -9,7 +9,7 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: 'masterpiecer-images.s3.yandex.net',
+                hostname: '**',
             },
         ]
     }

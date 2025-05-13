@@ -1,6 +1,7 @@
 import Card from "@/components/Card";
 import Link from "next/link";
 import styles from "./Blog.module.scss";
+
 export default function BlogPage() {
   return (
     <fieldset>
